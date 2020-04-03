@@ -1,0 +1,447 @@
+{
+  "luis_schema_version": "4.0.0",
+  "versionId": "0.1",
+  "name": "以機器人創建LUIS服務",
+  "desc": "",
+  "culture": "zh-cn",
+  "tokenizerVersion": "1.0.0",
+  "intents": [
+    {
+      "name": "None"
+    },
+    {
+      "name": "PUBLISH LUIS APP"
+    },
+    {
+      "name": "創建一個entity"
+    },
+    {
+      "name": "創建一個intent"
+    },
+    {
+      "name": "創建一個新的LUIS APP"
+    },
+    {
+      "name": "新增訓練語句"
+    },
+    {
+      "name": "確認在哪一個LUIS APP"
+    },
+    {
+      "name": "訓練LUIS APP"
+    }
+  ],
+  "entities": [
+    {
+      "name": "app_name",
+      "roles": []
+    },
+    {
+      "name": "entity_name",
+      "roles": []
+    },
+    {
+      "name": "intent_name",
+      "roles": []
+    }
+  ],
+  "composites": [],
+  "closedLists": [],
+  "patternAnyEntities": [],
+  "regex_entities": [],
+  "prebuiltEntities": [],
+  "model_features": [],
+  "regex_features": [],
+  "patterns": [],
+  "utterances": [
+    {
+      "text": "創建訓練句子",
+      "intent": "新增訓練語句",
+      "entities": []
+    },
+    {
+      "text": "加入範例句",
+      "intent": "新增訓練語句",
+      "entities": []
+    },
+    {
+      "text": "告訴我現在服務的名稱",
+      "intent": "確認在哪一個LUIS APP",
+      "entities": []
+    },
+    {
+      "text": "告訴我現在的服務是哪一個",
+      "intent": "確認在哪一個LUIS APP",
+      "entities": []
+    },
+    {
+      "text": "幫我創建一個叫做地點的實體",
+      "intent": "創建一個entity",
+      "entities": [
+        {
+          "entity": "entity_name",
+          "startPos": 8,
+          "endPos": 9
+        }
+      ]
+    },
+    {
+      "text": "幫我創建一個叫做客訴的意圖",
+      "intent": "創建一個intent",
+      "entities": [
+        {
+          "entity": "intent_name",
+          "startPos": 8,
+          "endPos": 9
+        }
+      ]
+    },
+    {
+      "text": "幫我創建一個叫做訂票的服務",
+      "intent": "創建一個新的LUIS APP",
+      "entities": [
+        {
+          "entity": "app_name",
+          "startPos": 8,
+          "endPos": 9
+        }
+      ]
+    },
+    {
+      "text": "幫我建立一個實體叫做食物",
+      "intent": "創建一個entity",
+      "entities": [
+        {
+          "entity": "entity_name",
+          "startPos": 10,
+          "endPos": 11
+        }
+      ]
+    },
+    {
+      "text": "幫我建立一個意圖叫做申訴",
+      "intent": "創建一個intent",
+      "entities": [
+        {
+          "entity": "intent_name",
+          "startPos": 10,
+          "endPos": 11
+        }
+      ]
+    },
+    {
+      "text": "幫我建立一個意圖叫做點餐",
+      "intent": "創建一個intent",
+      "entities": [
+        {
+          "entity": "intent_name",
+          "startPos": 10,
+          "endPos": 11
+        }
+      ]
+    },
+    {
+      "text": "幫我建立一個服務叫做測試程式",
+      "intent": "創建一個新的LUIS APP",
+      "entities": [
+        {
+          "entity": "app_name",
+          "startPos": 10,
+          "endPos": 13
+        }
+      ]
+    },
+    {
+      "text": "幫我發行",
+      "intent": "PUBLISH LUIS APP",
+      "entities": []
+    },
+    {
+      "text": "幫我訓練這個服務",
+      "intent": "訓練LUIS APP",
+      "entities": []
+    },
+    {
+      "text": "建立一個實體",
+      "intent": "創建一個entity",
+      "entities": []
+    },
+    {
+      "text": "建立一個實體叫做食物",
+      "intent": "創建一個entity",
+      "entities": [
+        {
+          "entity": "entity_name",
+          "startPos": 8,
+          "endPos": 9
+        }
+      ]
+    },
+    {
+      "text": "建立一個意圖",
+      "intent": "創建一個intent",
+      "entities": []
+    },
+    {
+      "text": "建立一個服務",
+      "intent": "創建一個新的LUIS APP",
+      "entities": []
+    },
+    {
+      "text": "想要創建一個叫做客訴的意圖",
+      "intent": "創建一個intent",
+      "entities": [
+        {
+          "entity": "intent_name",
+          "startPos": 8,
+          "endPos": 9
+        }
+      ]
+    },
+    {
+      "text": "想要創建一個叫做點餐的服務",
+      "intent": "創建一個新的LUIS APP",
+      "entities": [
+        {
+          "entity": "app_name",
+          "startPos": 8,
+          "endPos": 9
+        }
+      ]
+    },
+    {
+      "text": "我在使用哪一個服務",
+      "intent": "確認在哪一個LUIS APP",
+      "entities": []
+    },
+    {
+      "text": "我在哪一個服務",
+      "intent": "確認在哪一個LUIS APP",
+      "entities": []
+    },
+    {
+      "text": "我在哪裡",
+      "intent": "確認在哪一個LUIS APP",
+      "entities": []
+    },
+    {
+      "text": "我想要一個實體，他的名字叫做液體",
+      "intent": "創建一個entity",
+      "entities": [
+        {
+          "entity": "entity_name",
+          "startPos": 14,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "我想要一個意圖，他的名字叫做買單",
+      "intent": "創建一個intent",
+      "entities": [
+        {
+          "entity": "intent_name",
+          "startPos": 14,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "我想要一個新的實體叫做地點",
+      "intent": "創建一個entity",
+      "entities": [
+        {
+          "entity": "entity_name",
+          "startPos": 11,
+          "endPos": 12
+        }
+      ]
+    },
+    {
+      "text": "我想要一個新的意圖叫做訂餐",
+      "intent": "創建一個intent",
+      "entities": [
+        {
+          "entity": "intent_name",
+          "startPos": 11,
+          "endPos": 12
+        }
+      ]
+    },
+    {
+      "text": "我想要一個新的服務叫做訂餐系統",
+      "intent": "創建一個新的LUIS APP",
+      "entities": [
+        {
+          "entity": "app_name",
+          "startPos": 11,
+          "endPos": 14
+        }
+      ]
+    },
+    {
+      "text": "我想要訓練這個LUIS APP",
+      "intent": "訓練LUIS APP",
+      "entities": []
+    },
+    {
+      "text": "我要publish",
+      "intent": "PUBLISH LUIS APP",
+      "entities": []
+    },
+    {
+      "text": "我要一個新的實體飲料",
+      "intent": "創建一個entity",
+      "entities": [
+        {
+          "entity": "entity_name",
+          "startPos": 8,
+          "endPos": 9
+        }
+      ]
+    },
+    {
+      "text": "我要一個新的意圖取餐",
+      "intent": "創建一個intent",
+      "entities": [
+        {
+          "entity": "intent_name",
+          "startPos": 8,
+          "endPos": 9
+        }
+      ]
+    },
+    {
+      "text": "我要一個新的服務點餐系統",
+      "intent": "創建一個新的LUIS APP",
+      "entities": [
+        {
+          "entity": "app_name",
+          "startPos": 8,
+          "endPos": 11
+        }
+      ]
+    },
+    {
+      "text": "我要創建一個叫做小王的服務",
+      "intent": "創建一個新的LUIS APP",
+      "entities": [
+        {
+          "entity": "app_name",
+          "startPos": 8,
+          "endPos": 9
+        }
+      ]
+    },
+    {
+      "text": "我要創建一個叫做服飾的實體",
+      "intent": "創建一個entity",
+      "entities": [
+        {
+          "entity": "entity_name",
+          "startPos": 8,
+          "endPos": 9
+        }
+      ]
+    },
+    {
+      "text": "我要創建一個叫做訂票的意圖",
+      "intent": "創建一個intent",
+      "entities": [
+        {
+          "entity": "intent_name",
+          "startPos": 8,
+          "endPos": 9
+        }
+      ]
+    },
+    {
+      "text": "我要推播服務",
+      "intent": "PUBLISH LUIS APP",
+      "entities": []
+    },
+    {
+      "text": "我要新增訓練語句",
+      "intent": "新增訓練語句",
+      "entities": []
+    },
+    {
+      "text": "我要發行服務",
+      "intent": "PUBLISH LUIS APP",
+      "entities": []
+    },
+    {
+      "text": "我要確認我現在訓練哪一個服務",
+      "intent": "確認在哪一個LUIS APP",
+      "entities": []
+    },
+    {
+      "text": "我要訓練",
+      "intent": "訓練LUIS APP",
+      "entities": []
+    },
+    {
+      "text": "我要訓練句子",
+      "intent": "新增訓練語句",
+      "entities": []
+    },
+    {
+      "text": "我要訓練服務",
+      "intent": "訓練LUIS APP",
+      "entities": []
+    },
+    {
+      "text": "推播服務",
+      "intent": "PUBLISH LUIS APP",
+      "entities": []
+    },
+    {
+      "text": "新增句子",
+      "intent": "新增訓練語句",
+      "entities": []
+    },
+    {
+      "text": "新增訓練語句",
+      "intent": "新增訓練語句",
+      "entities": []
+    },
+    {
+      "text": "請幫我建立一個新的實體叫做固體",
+      "intent": "創建一個entity",
+      "entities": [
+        {
+          "entity": "entity_name",
+          "startPos": 13,
+          "endPos": 14
+        }
+      ]
+    },
+    {
+      "text": "請幫我建立一個新的意圖叫做付款",
+      "intent": "創建一個intent",
+      "entities": [
+        {
+          "entity": "intent_name",
+          "startPos": 13,
+          "endPos": 14
+        }
+      ]
+    },
+    {
+      "text": "請幫我發行服務",
+      "intent": "PUBLISH LUIS APP",
+      "entities": []
+    },
+    {
+      "text": "開始訓練",
+      "intent": "訓練LUIS APP",
+      "entities": []
+    },
+    {
+      "text": "開始訓練服務",
+      "intent": "訓練LUIS APP",
+      "entities": []
+    }
+  ],
+  "settings": []
+}
